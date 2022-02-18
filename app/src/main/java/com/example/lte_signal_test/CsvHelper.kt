@@ -25,7 +25,7 @@ class CsvHelper(private val filePath: String) {
 
     fun writeData(fileName: String, dataList: ArrayList<Array<String>>) {
         try {
-            FileWriter(File("$filePath/$fileName")).use { fw ->
+            FileWriter(File("$filePath/$fileName"),true).use { fw ->
                 // writeNext()를 이용한 리스트 데이터 등록
                 CSVWriter(fw).use {
                     for (data in dataList) {
