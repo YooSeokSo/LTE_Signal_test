@@ -47,4 +47,6 @@ dependencies {
     implementation 'com.opencsv:opencsv:4.4'
     //JSpeedTest
     implementation 'fr.bmartel:jspeedtest:1.32.1'
+    //gps
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
 }
